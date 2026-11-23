@@ -33,8 +33,8 @@ $$
 Under RH, the classical von Koch–Schoenfeld prime-counting estimate gives
 
 $$
-\boxed{h(n)=\operatorname{Li}(n)-\frac12\operatorname{Li}(n/2)
--\frac12\operatorname{Li}(n/3)+O(\sqrt n\log n).}
+\boxed{h(n)=\mathrm{Li}(n)-\frac12\mathrm{Li}(n/2)
+-\frac12\mathrm{Li}(n/3)+O(\sqrt n\log n).}
 $$
 
 This is a proved *implication from RH*, not a new independent result. It refines the previously recorded first-order asymptotic $h(n)\sim7n/(12\log n)$. The exact finite-$n$ theorem remains unconditional. Neither the new corollary nor RH is part of the existing P010 Lean proof, and the submitted manuscript is unchanged.
