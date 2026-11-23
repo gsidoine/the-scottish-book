@@ -34,6 +34,36 @@ $$
 \boxed{h(n)\sim \frac7{12}\frac{n}{\log n}}\qquad(n\to\infty).
 $$
 
+### Sharper prime-counting corollary under RH
+
+**Corollary.** Assuming the Riemann hypothesis, as \(n\to\infty\),
+
+$$
+h(n)=\operatorname{Li}(n)
+-\frac12\operatorname{Li}(n/2)
+-\frac12\operatorname{Li}(n/3)
++O(\sqrt n\log n),
+$$
+
+where \(\operatorname{Li}(x)=\int_2^x dt/\log t\) for \(x\ge2\).
+
+**Proof.** With \(B_n=\pi(n/2)-\pi(n/3)\ge0\),
+
+$$
+\max\left(1,\left\lceil B_n/2\right\rceil\right)
+=\frac12 B_n+O(1).
+$$
+
+The exact formula therefore gives
+
+$$
+h(n)=\pi(n)-\frac12\pi(n/2)-\frac12\pi(n/3)+O(1).
+$$
+
+The classical consequence \(\pi(x)=\operatorname{Li}(x)+O(\sqrt{x}\log x)\) of RH yields the claim. \(\square\)
+
+This is an application of the classical prime-counting error estimate, not a separate claim of mathematical novelty. The exact formula is unconditional; the improved error bound uses RH. The corollary is not presently formalized in the P010 Lean certificate. See the [2026 RH/GRH implications audit](../audits/2026-11-23-RH-GRH-implications.md) for the verification status of the external RH proof.
+
 The exact finite-$n$ formula is [kernel-checked in Lean 4](../formal/P010/README.md), via the unconditional theorem `P010_exact`. The asymptotic corollary is not formalized. The submitted journal manuscript remains an unchanged archival version.
 
 This exact formula is proved by a constructive path cover in a noncoprime graph. The first independent computation tests all $12\le n\le10\,000$, with sampled full witness checking, and exact elementary small-case witnesses cover $4\le n\le11$. None of those finite tests substitutes for the proof.
