@@ -33,9 +33,9 @@ The restriction $n\ge7$ is essential: at $n=5$, vertex 5 has only the prime-sum 
 
 **Theorem (computer-assisted corollary).** There are infinitely many odd integers $n$ with
 
-$
+$$
 \boxed{\kappa_2(n)=4.}
-$
+$$
 
 The [complete argument](../../theorems/P034-infinitely-many-four-prime-biconnected.md) combines the four-label even-order Hamiltonian construction of Chen–Fu–Guo with the unconditional bounded-prime-gap theorem. If the even-order graph on $[2m]$ has a Hamiltonian cycle using prime sums $a,b,2m+a,2m+b$ with $3\le a<b$, the vertex $2m+1$ attaches to distinct vertices $a-1$ and $b-1$. The resulting odd-order graph is 2-vertex-connected.
 
