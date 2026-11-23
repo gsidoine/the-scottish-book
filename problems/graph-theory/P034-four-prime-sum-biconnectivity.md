@@ -3,13 +3,13 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** For every odd n≥7, do four distinct prime sums suffice to make the graph on [n] 2-vertex-connected?  
 > **Formulation:** candidate. **Novelty:** unverified; prime-sum connectivity predecessor.  
-> **Verified/known progress:** For odd n≥5, at least four odd-prime labels are necessary for minimum degree two; the bound is attained in tested odd cases 7≤n≤39.  
-> **Finite evidence:** Exhaustive four-label search for odd n=7,9,...,39; n=5 impossible even with all prime sums.  
+> **Verified/known progress:** For odd n≥5, four prime labels are necessary; equality holds for infinitely many odd n by a computer-assisted corollary of Chen–Fu–Guo and bounded prime gaps.  
+> **Finite evidence:** Exact 6,171-case modular-prime certificate for the infinite family; reproducible articulation-point verification for every odd 7≤n≤3001 (1,498 orders).  
 > **Symbolic prize:** A Coffee (symbolic) — A construction using four prime sums for every odd order at least seven, or an exceptional order.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
-**Area:** graph theory and number theory. **Status:** candidate; historical novelty and openness unverified.
+**Area:** graph theory and number theory. **Status:** candidate; an infinite family is proved, while the all-odd-order assertion and its historical priority remain unresolved.
 
 ## The question
 
@@ -29,26 +29,43 @@ For even n the lower bound is **not** valid: $n+1$ may be an odd prime and label
 
 The restriction $n\ge7$ is essential: at $n=5$, vertex 5 has only the prime-sum neighbour 2 (because the possible sums are 6,7,8,9,10). Thus no palette of any size can give degree two at vertex 5.
 
+## Infinitely many odd orders
+
+**Theorem (computer-assisted corollary).** There are infinitely many odd integers $n$ with
+
+$$
+\boxed{\kappa_2(n)=4.}
+$$
+
+The [complete argument](../../theorems/P034-infinitely-many-four-prime-biconnected.md) combines the four-label even-order Hamiltonian construction of Chen–Fu–Guo with the unconditional bounded-prime-gap theorem. If the even-order graph on $[2m]$ has a Hamiltonian cycle using prime sums $a,b,2m+a,2m+b$ with $3\le a<b$, the vertex $2m+1$ attaches to distinct vertices $a-1$ and $b-1$. The resulting odd-order graph is 2-vertex-connected.
+
+For every even gap $g\le246$ and every reduced residue $i$ modulo $g$, an [exact finite computation](../../experiments/P034_infinite_family_verifier.py) produces primes $3\le a\le241$ and $a+g$ satisfying $\gcd(g/2,(i-a)/2)=1$. The $6{,}171$ checked cases remove the possible small-label exception $a=1$ from the even-order construction. This is a finite computation within an unconditional mathematical proof, not an assertion of independent historical novelty.
+
 ## Finite evidence and witness method
 
-An exhaustive search over four-element subsets of odd primes less than 2n found a 2-vertex-connected palette for **every odd n from 7 to 39 inclusive**. Representative witnesses:
+A [self-contained exact verifier](../../experiments/P034_verify_odd_7_to_3001.py) establishes a four-prime 2-vertex-connected palette for each of the $1{,}498$ odd orders $7\le n\le3001$. For each order it examines pairs among the five nearest primes at or below $n$ and the five nearest primes above $n$; at most 11 palettes are tested before finding a witness. The algorithm checks primality and the absence of articulation vertices using integer arithmetic and depth-first low-link values.
 
-| n | Four prime sums |
+Representative witnesses:
+
+| $n$ | Four prime sums |
 |---:|---|
 | 7 | 5, 7, 11, 13 |
-| 9 | 3, 5, 11, 13 |
-| 15 | 3, 5, 17, 19 |
-| 25 | 5, 7, 29, 31 |
-| 39 | 3, 5, 41, 43 |
+| 39 | 31, 37, 41, 43 |
+| 101 | 97, 101, 103, 107 |
+| 1001 | 991, 997, 1009, 1013 |
+| 2001 | 1997, 1999, 2003, 2011 |
+| 3001 | 2999, 3001, 3011, 3019 |
 
-Each candidate graph was checked for connectivity after deletion of each individual vertex. These tests are finite evidence, **not a proof for all odd n**. The construction may benefit from using two sums below n and two above n, but this pattern alone does not imply 2-connectivity.
+The finite check establishes precisely the stated range; it is not a universal proof.
 
 ## Predecessors and novelty risk
 
-The complete prime-sum graph and its Hamiltonian questions have an established literature, including [Chen–Fu–Guo (2021)](https://doi.org/10.1007/s00373-020-02241-1) and [Croot–Jin (2026)](https://doi.org/10.1007/s00373-025-02999-2). The existing [P033](P033-prime-sum-three-palette.md) deals with **connectivity** using three labels; that does not imply 2-vertex-connectivity. In particular, central three-sum palettes with one sum above n typically give vertex n degree one.
+The complete prime-sum graph and its Hamiltonian questions have an established literature, including [Chen–Fu–Guo (2021)](https://doi.org/10.1007/s00373-020-02241-1) and [Croot–Jin (2026)](https://doi.org/10.1007/s00373-025-02999-2). The existing [P033](P033-prime-sum-three-palette.md) deals with **connectivity** using three labels; that does not imply 2-vertex-connectivity. The established even-order construction of Chen–Fu–Guo yields the infinite family above, but does not settle every odd order. In particular, central three-sum palettes with one sum above n typically give vertex n degree one.
 
 The remaining question concerns the *sparse-label 2-vertex-connectivity extremum*; the prime-sum graph itself is an established object. A specialist priority check against rainbow/Hamiltonian prime-set literature remains mandatory.
 
-## Falsification and research plan
+## Remaining question
 
-Search for an odd n≥7 for which **every** four-prime palette has a cut vertex or disconnected graph; or establish a uniform four-label construction via two independent reflection-step movements with controlled boundary attachments. A theorem for all sufficiently large odd n would already be substantial even without an effective threshold. Do not confuse the tested range with an all-n proof.
+It remains unknown whether $\kappa_2(n)=4$ for **every** odd $n\ge7$. The infinite-family theorem and the finite verification through $n=3001$ do not establish a uniform construction. A counterexample would be an odd order at which every four-prime palette has a cut vertex or is disconnected.
+
+Historical novelty of the universal conjecture requires further specialist comparison with prime-sum Hamiltonicity and bounded-label graph constructions.
