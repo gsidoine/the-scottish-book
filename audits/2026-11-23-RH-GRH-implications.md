@@ -4,9 +4,9 @@
 
 ## Verification status and logical scope
 
-On 20 November 2026, Levent Alpöge announced a Lean 4 development of the Riemann hypothesis (RH) and its generalization for Dirichlet \(L\)-functions, developed with assistance from Claude. On 21 November, the Lean Focused Research Organization and Mathlib Initiative certified that the RH statement and proof had passed independent verification. Andrew Sutherland's verification record reports compilation of 175,187 Lean modules, comparison against Mathlib's pre-existing RH statement, and acceptance by multiple independent proof checkers.
+On 20 November 2026, Levent Alpöge announced a Lean 4 development of the Riemann hypothesis (RH) and its generalization for Dirichlet $L$-functions, developed with assistance from Claude. On 21 November, the Lean Focused Research Organization and Mathlib Initiative certified that the RH statement and proof had passed independent verification. Andrew Sutherland's verification record reports compilation of 175,187 Lean modules, comparison against Mathlib's pre-existing RH statement, and acceptance by multiple independent proof checkers.
 
-The verified main statements include RH for the Riemann zeta function and the zero-free half-plane \(\Re s>1/2\) for every Dirichlet \(L\)-function, apart from the conventional principal-character pole at \(s=1\). This is **Dirichlet GRH**, not GRH for arbitrary automorphic \(L\)-functions or all Dedekind zeta functions. Independent kernel verification is distinct from human-readable exposition, journal peer review, and formal recognition by a prize body.
+The verified main statements include RH for the Riemann zeta function and the zero-free half-plane $\Re s>1/2$ for every Dirichlet $L$-function, apart from the conventional principal-character pole at $s=1$. This is **Dirichlet GRH**, not GRH for arbitrary automorphic $L$-functions or all Dedekind zeta functions. Independent kernel verification is distinct from human-readable exposition, journal peer review, and formal recognition by a prize body.
 
 Primary sources:
 - [Lean FRO and Mathlib Initiative, joint verification statement (21 November 2026)](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/).
@@ -17,38 +17,38 @@ These developments do not change the established mathematical statements or proo
 
 ## P010 — sharpened error term (standard consequence)
 
-The [exact theorem](../theorems/P010-exact-coprime-adjacencies.md) states, for \(n\ge4\),
+The [exact theorem](../theorems/P010-exact-coprime-adjacencies.md) states, for $n\ge4$,
 
-\[
+$$
 h(n)=\pi(n)-\pi(n/2)+
 \max\left(1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right).
-\]
+$$
 
-Since the last term equals \((\pi(n/2)-\pi(n/3))/2+O(1)\), one has unconditionally
+Since the last term equals $(\pi(n/2)-\pi(n/3))/2+O(1)$, one has unconditionally
 
-\[
+$$
 h(n)=\pi(n)-\frac12\pi(n/2)-\frac12\pi(n/3)+O(1).
-\]
+$$
 
 Under RH, the classical von Koch–Schoenfeld prime-counting estimate gives
 
-\[
+$$
 \boxed{h(n)=\operatorname{Li}(n)-\frac12\operatorname{Li}(n/2)
 -\frac12\operatorname{Li}(n/3)+O(\sqrt n\log n).}
-\]
+$$
 
-This is a proved *implication from RH*, not a new independent result. It refines the previously recorded first-order asymptotic \(h(n)\sim7n/(12\log n)\). The exact finite-\(n\) theorem remains unconditional. Neither the new corollary nor RH is part of the existing P010 Lean proof, and the submitted manuscript is unchanged.
+This is a proved *implication from RH*, not a new independent result. It refines the previously recorded first-order asymptotic $h(n)\sim7n/(12\log n)$. The exact finite-$n$ theorem remains unconditional. Neither the new corollary nor RH is part of the existing P010 Lean proof, and the submitted manuscript is unchanged.
 
 Classical reference: [NIST DLMF, §27.12](https://dlmf.nist.gov/27.12) (RH and the prime-counting error bound).
 
 ## P033 — prime-sum connectivity (no status change)
 
-The universal result \(\kappa(n)\le3\) has an existing unconditional mathematical argument combining effective prime-progression estimates with a finite certificate. Dirichlet GRH offers the classical alternative estimates
+The universal result $\kappa(n)\le3$ has an existing unconditional mathematical argument combining effective prime-progression estimates with a finite certificate. Dirichlet GRH offers the classical alternative estimates
 
-\[
+$$
 \psi(x;q,a)=\frac{x}{\varphi(q)}
 +O\!\left(\sqrt{x}\log^2(qx)\right)
-\]
+$$
 
 for reduced residue classes, with the usual uniformity and normalization conventions. These estimates could yield shorter proofs or improved quantitative ranges, once the constants and the graph-theoretic hypotheses are checked. They do not supersede the unconditional existing proof or its finite certificate without an explicit new derivation.
 
