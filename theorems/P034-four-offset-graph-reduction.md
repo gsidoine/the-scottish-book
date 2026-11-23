@@ -36,7 +36,7 @@ If four prime labels make \(G_n(S)\) 2-vertex-connected, exactly two of them are
 -W\le d_1<d_2<0\le d_3<d_4\le W.
 \]
 
-Both the sign pattern and the gcd-one condition are necessary. They are not sufficient without a condition on the interval length. For \(n=7\) and \(S=\{3,5,11,13\}\), the offsets are \((-3,-2,1,2)\) and have gcd-one differences, but \(G_7(S)\) is disconnected (the vertex \(3\) belongs to the component \(\{1,2,3,4,7,6,5\}\) only via the edge \(2\!-\!3\); in fact \(\{2,3\}\) separates from the other five vertices after deleting \(1\), and \(G_7(S)\) has a cut vertex).
+Both the sign pattern and the gcd-one condition are necessary. They are not sufficient without a condition on the interval length. For \(n=7\) and \(S=\{3,5,11,13\}\), the offsets are \((-3,-2,1,2)\) and have gcd-one differences, but \(G_7(S)\) is a spanning path with vertex order \(3,2,1,4,7,6,5\), not a 2-vertex-connected graph. Its endpoints have degree one, and several internal vertices are cut vertices.
 
 ## Structural conjecture
 
