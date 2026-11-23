@@ -64,6 +64,24 @@ The complete prime-sum graph and its Hamiltonian questions have an established l
 
 The remaining question concerns the *sparse-label 2-vertex-connectivity extremum*; the prime-sum graph itself is an established object. A specialist priority check against rainbow/Hamiltonian prime-set literature remains mandatory.
 
+## Interval-reflection reduction
+
+For odd $n=2m+1$, write the odd vertices as $n-2k$ ($0\le k\le m$) and the even vertices as $2j+2$ ($0\le j<m$). A prime sum label $s$ is equivalent to the integer offset
+
+$$
+d_s=\frac{s-(n+2)}2.
+$$
+
+The edge relation becomes $j-k=d_s$. The [exact graph isomorphism and residue obstruction](../../theorems/P034-four-offset-graph-reduction.md) show that any connected four-label palette must satisfy
+
+$$
+\gcd(d_2-d_1,d_3-d_1,d_4-d_1)=1.
+$$
+
+The four labels necessarily yield two negative and two nonnegative offsets. A proposed stronger *sufficient* condition is that these four offsets belong to $[-W,W]$ and $m\ge2W-1$. The sufficiency statement is **unproved**, but an [exact falsification test](../../experiments/P034_four_offset_biconnectivity.py) found no counterexample in 47,162 width-parameter patterns, with repeated interval lengths for widths at most 12.
+
+If the proposed sufficient condition holds in general, the existing P033 prime-palette density theorem implies P034 for **every sufficiently large odd order**, not merely infinitely many odd orders. This is a conditional implication, not a resolution.
+
 ## Remaining question
 
 It remains unknown whether $\kappa_2(n)=4$ for **every** odd $n\ge7$. The infinite-family theorem and the finite verification through $n=3001$ do not establish a uniform construction. A counterexample would be an odd order at which every four-prime palette has a cut vertex or is disconnected.
