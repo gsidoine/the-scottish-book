@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** For every odd n≥7, do four distinct prime sums suffice to make the graph on [n] 2-vertex-connected?  
 > **Formulation:** candidate. **Novelty:** unverified; prime-sum connectivity predecessor.  
-> **Verified/known progress:** Four labels are necessary at every odd order; four suffice for infinitely many odd orders, by a computer-assisted corollary of Chen–Fu–Guo and bounded prime gaps.  
-> **Finite evidence:** A reproducible 2-connectivity search establishes all 1,498 odd orders 7≤n≤3001; an exact 6,171-case residue certificate supports the infinite-family theorem. At n=5, no prime palette works.  
+> **Verified/known progress:** For odd n≥5, four prime labels are necessary; equality holds for infinitely many odd n by a computer-assisted corollary of Chen–Fu–Guo and bounded prime gaps.  
+> **Finite evidence:** Exact 6,171-case modular-prime certificate for the infinite family; reproducible articulation-point verification for every odd 7≤n≤3001 (1,498 orders).  
 > **Symbolic prize:** A Coffee (symbolic) — A construction using four prime sums for every odd order at least seven, or an exceptional order.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
