@@ -1089,8 +1089,8 @@
       "question": "For every odd n≥7, do four distinct prime sums suffice to make the graph on [n] 2-vertex-connected?",
       "status": "candidate",
       "novelty": "unverified; prime-sum connectivity predecessor",
-      "result": "For odd n≥5, at least four odd-prime labels are necessary for minimum degree two; the bound is attained in tested odd cases 7≤n≤39",
-      "verification": "Exhaustive four-label search for odd n=7,9,...,39; n=5 impossible even with all prime sums",
+      "result": "For odd n≥5, four prime labels are necessary; equality holds for infinitely many odd n by a computer-assisted corollary of Chen–Fu–Guo and bounded prime gaps.",
+      "verification": "Exact 6,171-case modular-prime certificate for the infinite family; reproducible articulation-point verification for every odd 7≤n≤3001 (1,498 orders).",
       "priority": "explore",
       "sources": [
         {
@@ -1104,6 +1104,10 @@
         {
           "name": "The Scottish Book P033",
           "url": "https://github.com/gsidoine/the-scottish-book/blob/main/problems/graph-theory/P033-prime-sum-three-palette.md"
+        },
+        {
+          "name": "D. H. J. Polymath (2014), Variants of the Selberg sieve, and bounded intervals containing many primes",
+          "url": "https://doi.org/10.1186/s40687-014-0012-7"
         }
       ],
       "portfolio_tier": "C",
