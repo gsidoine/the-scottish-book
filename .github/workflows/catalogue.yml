@@ -97,6 +97,12 @@ jobs:
       - name: Verify P033 prime palette connectivity and twin-prime baseline
         run: python experiments/P033_prime_sum_three_palette.py
 
+      - name: Verify P034 finite prime-residue lemma (all 6171 cases)
+        run: python experiments/P034_infinite_family_verifier.py
+
+      - name: Verify P034 four-prime biconnectivity for all odd n <= 3001
+        run: python experiments/P034_verify_odd_7_to_3001.py
+
       - name: Verify P036 Pasch overlap rank conditions
         run: python experiments/P036_pasch_overlap_ranks.py
 
