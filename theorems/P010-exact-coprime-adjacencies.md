@@ -36,7 +36,7 @@ $$
 
 ### Sharper prime-counting corollary under RH
 
-**Corollary.** Assuming the Riemann hypothesis, as \(n\to\infty\),
+**Corollary.** Assuming the Riemann hypothesis, as $n\to\infty$,
 
 $$
 h(n)=\operatorname{Li}(n)
@@ -45,9 +45,9 @@ h(n)=\operatorname{Li}(n)
 +O(\sqrt n\log n),
 $$
 
-where \(\operatorname{Li}(x)=\int_2^x dt/\log t\) for \(x\ge2\).
+where $\operatorname{Li}(x)=\int_2^x dt/\log t$ for $x\ge2$.
 
-**Proof.** With \(B_n=\pi(n/2)-\pi(n/3)\ge0\),
+**Proof.** With $B_n=\pi(n/2)-\pi(n/3)\ge0$,
 
 $$
 \max\left(1,\left\lceil B_n/2\right\rceil\right)
@@ -60,7 +60,7 @@ $$
 h(n)=\pi(n)-\frac12\pi(n/2)-\frac12\pi(n/3)+O(1).
 $$
 
-The classical consequence \(\pi(x)=\operatorname{Li}(x)+O(\sqrt{x}\log x)\) of RH yields the claim. \(\square\)
+The classical consequence $\pi(x)=\operatorname{Li}(x)+O(\sqrt{x}\log x)$ of RH yields the claim. $\square$
 
 This is an application of the classical prime-counting error estimate, not a separate claim of mathematical novelty. The exact formula is unconditional; the improved error bound uses RH. The corollary is not presently formalized in the P010 Lean certificate. See the [2026 RH/GRH implications audit](../audits/2026-11-23-RH-GRH-implications.md) for the verification status of the external RH proof.
 
