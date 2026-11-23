@@ -38,6 +38,10 @@ $$
 
 Both the sign pattern and the gcd-one condition are necessary. They are not sufficient without a condition on the interval length. For $n=7$ and $S=\{3,5,11,13\}$, the offsets are $(-3,-2,1,2)$ and have gcd-one differences, but $G_7(S)$ is a spanning path with vertex order $3,2,1,4,7,6,5$, not a 2-vertex-connected graph. Its endpoints have degree one, and several internal vertices are cut vertices.
 
+## Related finite Toeplitz graphs
+
+The bipartite incidence matrix of $H_m(D)$ has four constant diagonals. Finite Toeplitz graphs and their arithmetic connectivity/bipartiteness conditions have a substantial prior literature; see S. Nicoloso and U. Pietropaoli, [*Bipartite finite Toeplitz graphs*](https://doi.org/10.1016/j.dam.2013.05.020), *Discrete Applied Mathematics* **165** (2014), 233–244. That source studies finite Toeplitz graphs with up to four distance parameters; an equivalence with the present rectangular bipartite 2-vertex-connectivity criterion has not been established. No originality is claimed for the change of coordinates or for the classical Toeplitz framework.
+
 ## Structural conjecture
 
 **Four-offset criterion (unproved).** Suppose
