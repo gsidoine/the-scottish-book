@@ -18,7 +18,7 @@ $$
 \gcd\left(\frac{b-a}{2},m\right)=1.
 $$
 
-Then the four primes $a,b,2m+a,2m+b$ make $G_{2m+1}(S)$ 2-vertex-connected.
+Then $G_{2m+1}(S)$ is 2-vertex-connected for $S=\{a,b,2m+a,2m+b\}$.
 
 **Proof.** Theorem 1.3 of Chen–Fu–Guo gives a Hamiltonian cycle in $G_{2m}(S)$. The vertex $2m+1$ has distinct neighbors $a-1$ and $b-1$ because
 
