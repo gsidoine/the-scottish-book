@@ -1,5 +1,7 @@
 # Mathematical merit and formulation review, P001–P050
 
+**Historical assessment.** The table records formulation statuses at the time of this screening. Subsequent proofs and counterexamples have changed several entries, notably P033 (now proved internally). The [canonical catalogue](../README.md#problem-catalogue) and individual dossiers provide current statuses; the original mathematical assessments below remain a dated research snapshot rather than a live index.
+
 The catalogue distinguishes a well-defined construction from a significant
 mathematical question. The existence of a graph, random variable, matrix,
 homology group or optimization parameter does not by itself establish an
@@ -25,7 +27,7 @@ and citations remain unchanged unless a concrete error is documented.
 
 ## Individual assessments
 
-| ID | Current status | Substantive content | Exact obstruction to progress or required theorem |
+| ID | Status at review | Substantive content | Exact obstruction to progress or required theorem |
 |---|---|---|---|
 | [P001](../problems/number-theory/P001-prime-spectrum.md) | Candidate | A bounded deficit for the number of distinct prime sums in a full matching. | The partial rainbow matching does not address completion; require a bounded-deficit construction or diverging obstruction. |
 | [P002](../problems/graph-theory/P002-prime-matching-reconfiguration.md) | Candidate | Connectivity under valid 4-cycle switches of prime-sum perfect matchings. | Beyond finite enumeration, identify an invariant, a general connectedness proof or a precise infinite obstruction. |
