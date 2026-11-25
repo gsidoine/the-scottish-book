@@ -41,6 +41,27 @@ The [complete argument](../../theorems/P034-infinitely-many-four-prime-biconnect
 
 For every even gap $g\le246$ and every reduced residue $i$ modulo $g$, an [exact finite computation](../../experiments/P034_infinite_family_verifier.py) produces primes $3\le a\le241$ and $a+g$ satisfying $\gcd(g/2,(i-a)/2)=1$. The $6{,}171$ checked cases remove the possible small-label exception $a=1$ from the even-order construction. This is a finite computation within an unconditional mathematical proof, not an assertion of independent historical novelty.
 
+### An alternative infinite-family proof
+
+The [one-consecutive-pair theorem](../../theorems/P034-one-consecutive-pair-and-prime-gaps.md)
+establishes that two consecutive negative offsets suffice for
+2-vertex-connectivity at the critical interval length, regardless
+of the gap between the two nonnegative offsets. By reflection, the
+same holds when only the nonnegative pair is consecutive.
+
+Fix the twin primes $269,271$. For infinitely many prime pairs
+$r<s$ with $s-r\le246$, put $n=s-270$. The four sums
+
+$$
+269,\quad271,\quad r,\quad s
+$$
+
+give a 2-vertex-connected $G_n(S)$ for all sufficiently large such
+$n$. The proof uses the unconditional Polymath8b prime-gap theorem
+and the explicit spanning ear construction. It does **not** use the
+6,171-case modular certificate from the earlier independent proof.
+The all-odd-order assertion remains open.
+
 ## Finite evidence and witness method
 
 A [self-contained exact verifier](../../experiments/P034_verify_odd_7_to_3001.py) establishes a four-prime 2-vertex-connected palette for each of the $1{,}498$ odd orders $7\le n\le3001$. For each order it examines pairs among the five nearest primes at or below $n$ and the five nearest primes above $n$; at most 11 palettes are tested before finding a witness. The algorithm checks primality and the absence of articulation vertices using integer arithmetic and depth-first low-link values.
