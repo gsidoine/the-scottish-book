@@ -33,10 +33,14 @@ class PortfolioConsolidationTests(unittest.TestCase):
 
     def test_archived_tiers_are_preserved_in_historical_report(self):
         expected = {"A": 6, "B": 8, "C": 10, "D": 5, "R": 1}
-        rows = re.findall(
-            r"(?m)^\\| \\[(P\\d{3})\\]\\([^)]+\\) \\| \\*\\*([ABCDR])\\*\\* \\|",
-            self.report,
-        )
+        rows = [
+            (
+                line.split("|")[1].split("]")[0].strip(" ["),
+                line.split("|")[2].strip(" *"),
+            )
+            for line in self.report.splitlines()
+            if line.startswith("| [P")
+        ]
         self.assertEqual(len(rows), 30)
         self.assertEqual([pid for pid, _ in rows],
                          [p["id"] for p in self.problems[:30]])
