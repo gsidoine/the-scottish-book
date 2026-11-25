@@ -10,6 +10,17 @@ $$
 \boxed{\kappa_2(n)=4.}
 $$
 
+### Alternative proof without a finite residue certificate
+
+An [independent elementary construction](P034-one-consecutive-pair-and-prime-gaps.md)
+proves the same infinite-family theorem using one fixed twin-prime pair,
+$269,271$, and the Polymath8b bound $246$ for infinitely recurring prime
+gaps. It does not use the finite arithmetic lemma below or the
+even-order Hamiltonian construction of Chen–Fu–Guo.
+
+The argument below is preserved as a separate, computer-assisted proof
+with its own explicit mathematical dependencies and certificate.
+
 ### Hamiltonian-cycle extension
 
 **Lemma 1.** Let $m\ge2$ and let $3\le a<b\le2m$ be primes such that $2m+a$ and $2m+b$ are prime and

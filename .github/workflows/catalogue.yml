@@ -109,6 +109,9 @@ jobs:
       - name: Verify P034 critical-span 2-connectivity through span 50
         run: python experiments/P034_critical_span_certificate.py
 
+      - name: Check P034 one-consecutive-pair spanning ear constructions
+        run: python experiments/P034_one_consecutive_ear_certificate.py --limit 40
+
       - name: Verify P036 Pasch overlap rank conditions
         run: python experiments/P036_pasch_overlap_ranks.py
 

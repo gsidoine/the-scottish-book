@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** For every odd n≥7, do four distinct prime sums suffice to make the graph on [n] 2-vertex-connected?  
 > **Formulation:** candidate. **Novelty:** unverified; prime-sum connectivity predecessor.  
-> **Verified/known progress:** Four labels are necessary at odd order and suffice infinitely often; the four-offset graph has an unbounded-span consecutive-pair construction and a computer-assisted theorem for every span at most 50.  
-> **Finite evidence:** Exact checks: 6,171 modular-prime cases, 1,498 odd orders through 3001, 211,587 critical-span graphs, and 4,830 consecutive-pair examples; general-span 2-connectivity remains open.  
+> **Verified/known progress:** Four labels are optimal for infinitely many odd orders. An elementary arbitrary-span theorem gives 2-connectivity whenever either same-sign offset pair is consecutive; with fixed twin primes 269, 271 and bounded prime gaps it yields a proof of the infinite family without the previous residue certificate.  
+> **Finite evidence:** Elementary ear decomposition, with optional 31,980-case (limit 40) or 131,040-case (limit 64) exact checks; 1,498 odd orders through 3001; earlier 6,171-case arithmetic certificate and 211,587 critical-span graph checks.  
 > **Symbolic prize:** A Coffee (symbolic) — A construction using four prime sums for every odd order at least seven, or an exceptional order.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
@@ -40,6 +40,27 @@ $$
 The [complete argument](../../theorems/P034-infinitely-many-four-prime-biconnected.md) combines the four-label even-order Hamiltonian construction of Chen–Fu–Guo with the unconditional bounded-prime-gap theorem. If the even-order graph on $[2m]$ has a Hamiltonian cycle using prime sums $a,b,2m+a,2m+b$ with $3\le a<b$, the vertex $2m+1$ attaches to distinct vertices $a-1$ and $b-1$. The resulting odd-order graph is 2-vertex-connected.
 
 For every even gap $g\le246$ and every reduced residue $i$ modulo $g$, an [exact finite computation](../../experiments/P034_infinite_family_verifier.py) produces primes $3\le a\le241$ and $a+g$ satisfying $\gcd(g/2,(i-a)/2)=1$. The $6{,}171$ checked cases remove the possible small-label exception $a=1$ from the even-order construction. This is a finite computation within an unconditional mathematical proof, not an assertion of independent historical novelty.
+
+### An alternative infinite-family proof
+
+The [one-consecutive-pair theorem](../../theorems/P034-one-consecutive-pair-and-prime-gaps.md)
+establishes that two consecutive negative offsets suffice for
+2-vertex-connectivity at the critical interval length, regardless
+of the gap between the two nonnegative offsets. By reflection, the
+same holds when only the nonnegative pair is consecutive.
+
+Fix the twin primes $269,271$. For infinitely many prime pairs
+$r<s$ with $s-r\le246$, put $n=s-270$. The four sums
+
+$$
+269,\quad271,\quad r,\quad s
+$$
+
+give a 2-vertex-connected $G_n(S)$ for all sufficiently large such
+$n$. The proof uses the unconditional Polymath8b prime-gap theorem
+and the explicit spanning ear construction. It does **not** use the
+6,171-case modular certificate from the earlier independent proof.
+The all-odd-order assertion remains open.
 
 ## Finite evidence and witness method
 
