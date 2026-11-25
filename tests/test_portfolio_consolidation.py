@@ -31,17 +31,19 @@ class PortfolioConsolidationTests(unittest.TestCase):
         matched = re.findall(r"^\| \[(P\d{3})\]", self.report, flags=re.M)
         self.assertEqual(matched, ids[:30])
 
-    def test_tier_metadata_matches_current_report(self):
+    def test_archived_tiers_are_preserved_in_historical_report(self):
         expected = {"A": 6, "B": 8, "C": 10, "D": 5, "R": 1}
-        observed = Counter(p["portfolio_tier"] for p in self.problems[:30])
-        self.assertEqual(dict(observed), expected)
-        for p in self.problems[:30]:
-            with self.subTest(problem=p["id"]):
-                self.assertRegex(
-                    self.report,
-                    r"(?m)^\| \[" + re.escape(p["id"])
-                    + r"\]\([^)]+\) \| \*\*"
-                    + re.escape(p["portfolio_tier"]) + r"\*\* \|")
+        rows = re.findall(
+            r"(?m)^\\| \\[(P\\d{3})\\]\\([^)]+\\) \\| \\*\\*([ABCDR])\\*\\* \\|",
+            self.report,
+        )
+        self.assertEqual(len(rows), 30)
+        self.assertEqual([pid for pid, _ in rows],
+                         [p["id"] for p in self.problems[:30]])
+        self.assertEqual(dict(Counter(tier for _, tier in rows)), expected)
+        for p in self.problems:
+            self.assertNotIn("portfolio_tier", p)
+            self.assertNotIn("priority", p)
 
     def test_public_navigation_and_github_browser(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
