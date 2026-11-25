@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** For every odd n≥7, do four distinct prime sums suffice to make the graph on [n] 2-vertex-connected?  
 > **Formulation:** candidate. **Novelty:** unverified; prime-sum connectivity predecessor.  
-> **Verified/known progress:** For odd n≥5, four prime labels are necessary; equality holds for infinitely many odd n by a computer-assisted corollary of Chen–Fu–Guo and bounded prime gaps.  
-> **Finite evidence:** Exact 6,171-case modular-prime certificate for the infinite family; reproducible articulation-point verification for every odd 7≤n≤3001 (1,498 orders).  
+> **Verified/known progress:** Four labels are necessary at odd order and suffice infinitely often; the four-offset graph has an unbounded-span consecutive-pair construction and a computer-assisted theorem for every span at most 50.  
+> **Finite evidence:** Exact checks: 6,171 modular-prime cases, 1,498 odd orders through 3001, 211,587 critical-span graphs, and 4,830 consecutive-pair examples; general-span 2-connectivity remains open.  
 > **Symbolic prize:** A Coffee (symbolic) — A construction using four prime sums for every odd order at least seven, or an exceptional order.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
@@ -78,7 +78,9 @@ $$
 \gcd(d_2-d_1,d_3-d_1,d_4-d_1)=1.
 $$
 
-The four labels necessarily yield two negative and two nonnegative offsets. A proposed stronger *sufficient* condition is that these four offsets belong to $[-W,W]$ and $m\ge2W-1$. The sufficiency statement is **unproved**, but an [exact falsification test](../../experiments/P034_four_offset_biconnectivity.py) found no counterexample in 47,162 width-parameter patterns, with repeated interval lengths for widths at most 12.
+The four labels necessarily yield two negative and two nonnegative offsets. Put $Q=d_4-d_1$. The [extension proposition](../../theorems/P034-four-offset-graph-reduction.md#extension-stability) proves that, once $H_m(D)$ is 2-vertex-connected for any $m\ge Q-1$, it remains so for every larger $m$. Thus the statement for all $m\ge Q-1$ is equivalent to its critical case $m=Q-1$.
+
+**Bounded-span theorem (computer-assisted).** If $Q\le50$ and the three offset differences have gcd one, the graph is 2-vertex-connected for **every $m\ge Q-1$**. Its exact [finite certificate](../../experiments/P034_critical_span_certificate.py) verifies all $211{,}587$ qualifying quadruples at the critical size; the extension proposition then covers arbitrarily large $m$. The general critical-span assertion for $Q>50$ remains unproved. There is also an [elementary arbitrary-span family](../../theorems/P034-four-offset-graph-reduction.md#an-unbounded-span-family): for every $a\ge2$ and $e\ge0$, the offsets $\{-a,-a+1,e,e+1\}$ give a 2-vertex-connected graph for all $m\ge a+e$. The proof constructs a cycle through all but one vertex and attaches the remaining vertex to two points of that cycle. This strengthens the earlier finite test of 47,162 width-parameter patterns and does not resolve P034 for all odd $n$.
 
 If the proposed sufficient condition holds in general, the existing P033 prime-palette density theorem implies P034 for **every sufficiently large odd order**, not merely infinitely many odd orders. This is a conditional implication, not a resolution.
 
