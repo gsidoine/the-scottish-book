@@ -109,7 +109,7 @@ negative offsets or the two nonnegative offsets are consecutive,
 a spanning ear decomposition. The family has unbounded span $Q$.
 
 This construction also provides a
-[non-computer-assisted infinite-family corollary](P034-one-consecutive-pair-and-prime-gaps.md#a-simpler-infinite-family-proof-for-prime-sum-graphs)
+[simpler infinite-family corollary](P034-one-consecutive-pair-and-prime-gaps.md#a-simpler-infinite-family-proof-for-prime-sum-graphs)
 for the original prime-sum graphs using the fixed twin primes $269,271$
 and the established prime-gap bound $246$.
 
