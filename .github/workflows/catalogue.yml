@@ -103,6 +103,9 @@ jobs:
       - name: Verify P034 four-prime biconnectivity for all odd n <= 3001
         run: python experiments/P034_verify_odd_7_to_3001.py
 
+      - name: Test P034 four-offset structural criterion in finite ranges
+        run: python experiments/P034_four_offset_biconnectivity.py
+
       - name: Verify P036 Pasch overlap rank conditions
         run: python experiments/P036_pasch_overlap_ranks.py
 
