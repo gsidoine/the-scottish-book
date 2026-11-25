@@ -73,6 +73,13 @@ def main():
     assert certified == 211587, certified
     print(f"P034: all {certified:,} gcd-one critical-span graphs pass (Q<=50).")
 
+    # Independent finite sanity checks for the arbitrary-span explicit family.
+    for a in range(2, 71):
+        for e in range(70):
+            Q = a + e + 1
+            assert biconnected(Q, a, a - 1, e), (a, e)
+    print("P034: 4,830 consecutive-pair instances also pass (Q up to 140).")
+
 
 if __name__ == "__main__":
     main()
