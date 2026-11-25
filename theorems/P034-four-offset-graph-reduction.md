@@ -40,20 +40,63 @@ Both the sign pattern and the gcd-one condition are necessary. They are not suff
 
 ## Related finite Toeplitz graphs
 
-The bipartite incidence matrix of $H_m(D)$ has four constant diagonals. Finite Toeplitz graphs and their arithmetic connectivity/bipartiteness conditions have a substantial prior literature; see S. Nicoloso and U. Pietropaoli, [*Bipartite finite Toeplitz graphs*](https://doi.org/10.1016/j.dam.2013.05.020), *Discrete Applied Mathematics* **165** (2014), 233–244. That source studies finite Toeplitz graphs with up to four distance parameters; an equivalence with the present rectangular bipartite 2-vertex-connectivity criterion has not been established. No originality is claimed for the change of coordinates or for the classical Toeplitz framework.
+The bipartite incidence matrix of $H_m(D)$ has four constant diagonals. Closely related literature includes S. Nicoloso and U. Pietropaoli, [*Bipartite finite Toeplitz graphs*](https://doi.org/10.1016/j.dam.2013.05.020), *Discrete Applied Mathematics* **165** (2014), 233–244, and S. Akbari, S. Hossein Ghorban, S. Malik and S. Qajar, [*Conditions for regularity and for 2-connectivity of Toeplitz graphs*](https://combinatorialpress.com/um/vol110/), *Utilitas Mathematica* **110** (2019), 305–314. The standard finite Toeplitz graph uses undirected absolute differences; $H_m(D)$ uses a rectangular bipartite incidence matrix with signed offsets. No equivalence with the present critical-span assertion has been established. Neither the change of coordinates nor the general theory of Toeplitz graphs is claimed as new.
+
+## Extension stability
+
+Write $D=\{d_1,d_2,d_3,d_4\}$ with
+
+$$
+d_1<d_2<0\le d_3<d_4,\qquad Q=d_4-d_1.
+$$
+
+**Proposition (extension).** For every $m\ge Q-1$,
+
+$$
+H_m(D)\text{ is 2-vertex-connected}
+\ \Longrightarrow\
+H_{m+1}(D)\text{ is 2-vertex-connected}.
+$$
+
+**Proof.** The old graph is an induced subgraph of the new graph. Add $B_m$ first. It has the two distinct old neighbors $A_{m-d_3}$ and $A_{m-d_4}$, because $m\ge Q-1\ge d_4$. Then add $A_{m+1}$. It has two distinct neighbors $B_{m+1+d_1}$ and $B_{m+1+d_2}$ in the enlarged graph. Both indices lie between $0$ and $m$, and $d_1\le-2$, so the first is an old right vertex. Adding a vertex adjacent to two distinct vertices of a 2-vertex-connected graph preserves 2-vertex-connectivity. Applying this twice proves the claim. $\square$
+
+**Corollary (critical-size reduction).** For every fixed $D$ as above,
+
+$$
+H_m(D)\text{ is 2-vertex-connected for all }m\ge Q-1
+\quad\Longleftrightarrow\quad
+H_{Q-1}(D)\text{ is 2-vertex-connected}.
+$$
+
+This equivalence requires no coprimality hypothesis. The bound $Q-1$ is sharp as a uniform lower threshold: for $D=\{-3,-2,0,2\}$ one has $Q=5$; $H_3(D)$ has a vertex $A_1$ of degree one, while $H_4(D)$ is 2-vertex-connected.
+
+## A bounded-span theorem
+
+**Theorem (computer-assisted).** Suppose
+
+$$
+d_1<d_2<0\le d_3<d_4,\qquad
+Q=d_4-d_1\le50,\qquad
+\gcd(d_2-d_1,d_3-d_1,d_4-d_1)=1.
+$$
+
+Then $H_m(D)$ is 2-vertex-connected for every $m\ge Q-1$.
+
+**Proof.** Write $D=\{-a,-c,e,b\}$, where $2\le a$, $1\le c<a$, $0\le e<b$, and $Q=a+b$. The gcd condition becomes
+
+$$
+\gcd(a-c,a+e,Q)=1.
+$$
+
+The [exact finite verifier](../experiments/P034_critical_span_certificate.py) enumerates every $3\le Q\le50$, $2\le a<Q$, $1\le c<a$ and $0\le e<Q-a$. It tests the gcd condition and checks 2-vertex-connectivity of $H_{Q-1}(D)$ using integer arithmetic and an articulation-point depth-first search. All $211{,}587$ gcd-one instances pass; the number of quadruples examined at each fixed $Q$ before gcd filtering is $\binom Q3$. The extension proposition completes the proof for every $m\ge Q-1$. $\square$
+
+The finite verification is a component of the proof; it is not a symbolic proof for arbitrary $Q$. An independent NetworkX implementation agreed on 300 randomly sampled test cases.
 
 ## Structural conjecture
 
-**Four-offset criterion (unproved).** Suppose
+**Critical-span conjecture (unproved).** For every four integers $d_1<d_2<0\le d_3<d_4$ whose differences have gcd one, is $H_{Q-1}(D)$ 2-vertex-connected, where $Q=d_4-d_1$?
 
-$$
--W\le d_1<d_2<0\le d_3<d_4\le W,\qquad
-\gcd(d_2-d_1,d_3-d_1,d_4-d_1)=1,
-$$
-
-where $W\ge2$. Is $H_m(\{d_1,d_2,d_3,d_4\})$ 2-vertex-connected for every $m\ge2W-1$?
-
-The [finite verifier](../experiments/P034_four_offset_biconnectivity.py) tests all gcd-one offset patterns for each $2\le W\le12$ and every $2W-1\le m\le3W+2$, as well as all 34,043 such patterns for $W=20$ at $m=39$. No counterexample occurs in these ranges. These tests do not prove the criterion.
+By the extension proposition this would also hold for every $m\ge Q-1$. It is stronger than the earlier sufficient-condition candidate $m\ge2W-1$ when $D\subseteq[-W,W]$, because $Q\le2W$. No proof or counterexample for arbitrary $Q$ is established here.
 
 ## Consequence if the criterion holds
 
