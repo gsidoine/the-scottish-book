@@ -27,11 +27,13 @@ class CatalogueTests(unittest.TestCase):
 
     def test_every_problem_has_a_dossier_and_sources(self):
         required = {"id", "title", "area", "file", "question", "status",
-                    "novelty", "result", "verification", "priority", "sources"}
+                    "novelty", "result", "verification", "sources"}
         for r in self.problems:
             with self.subTest(problem=r["id"]):
                 self.assertTrue(required.issubset(r))
                 self.assertTrue((ROOT / r["file"]).is_file())
+                self.assertNotIn("priority", r)
+                self.assertNotIn("portfolio_tier", r)
                 self.assertGreater(len(r["question"]), 20)
                 self.assertGreaterEqual(len(r["sources"]), 1)
                 self.assertEqual(
