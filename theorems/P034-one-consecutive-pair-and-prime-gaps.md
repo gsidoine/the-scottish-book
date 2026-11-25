@@ -138,12 +138,13 @@ For example, $S=\{269,271,997,1009\}$ gives 2-vertex-connectivity
 at $n=739$. This finite instance can be checked directly but is
 not needed in the proof.
 
-This establishes the infinite-family theorem without the finite
-residue certificate or the even-order Hamiltonian construction
+This derives the infinite-family theorem without an *additional*
+finite residue certificate or the even-order Hamiltonian construction
 used in the [earlier independent proof](P034-infinitely-many-four-prime-biconnected.md).
-The all-odd-order conjecture remains open. The proof does **not**
-assume infinitely many twin primes: it uses only the single verified
-pair $269,271$ and an established bounded-prime-gap theorem.
+The all-odd-order conjecture remains open. The deduction does **not** assume infinitely many twin primes: it uses
+only the single verified pair $269,271$ and an established bounded-prime-gap
+theorem. Polymath8b's published proof has its own analytic and numerical
+inputs; the present deduction does not independently verify those inputs.
 
 ## References
 
