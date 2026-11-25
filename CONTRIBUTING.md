@@ -20,7 +20,7 @@ GitHub's [issue forms](https://docs.github.com/en/communities/using-templates-to
 
 ## Contribute to an existing problem
 
-Open the problem's README. Attach or edit a proof in its `proofs/` folder, a source in `references/`, a counterexample or reduction in `exploration/`, reproducible code in `verification/`, or a checked Lean statement/proof in `formal/`. Propose a pull request with the [contribution template](.github/PULL_REQUEST_TEMPLATE.md). Smaller corrections may be filed as issues.
+Open the problem dossier (a Markdown file or a folder `README.md`). Detailed folders may contain `proofs/`, `references/`, `exploration/`, `verification/` and `formal/` subdirectories. Elsewhere in the collection, established results are maintained under [`theorems/`](theorems/), computations under [`experiments/`](experiments/) and Lean certificates under [`formal/`](formal/). Propose a pull request with the [contribution template](.github/PULL_REQUEST_TEMPLATE.md). Smaller corrections may be filed as issues.
 
 In the migration period some theorems and experiments remain in their established global locations; existing links must remain valid. New PRs should not rewrite historical submitted manuscripts.
 
