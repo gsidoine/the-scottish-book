@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** For every odd n≥7, do four distinct prime sums suffice to make the graph on [n] 2-vertex-connected?  
 > **Formulation:** candidate. **Novelty:** unverified; prime-sum connectivity predecessor.  
-> **Verified/known progress:** Four labels are necessary at odd order and suffice for infinitely many odd orders; a critical-span stability theorem holds for all four-offset graphs with span at most 50.  
-> **Finite evidence:** 6,171 residue cases for the infinite family, 1,498 odd orders through 3001, and 211,587 critical-span gcd-one graphs (span at most 50), with exact extension to all larger graph orders.  
+> **Verified/known progress:** Four labels are necessary at odd order and suffice infinitely often; the four-offset graph has an unbounded-span consecutive-pair construction and a computer-assisted theorem for every span at most 50.  
+> **Finite evidence:** Exact checks: 6,171 modular-prime cases, 1,498 odd orders through 3001, 211,587 critical-span graphs, and 4,830 consecutive-pair examples; general-span 2-connectivity remains open.  
 > **Symbolic prize:** A Coffee (symbolic) — A construction using four prime sums for every odd order at least seven, or an exceptional order.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
