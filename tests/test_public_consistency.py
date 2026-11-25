@@ -51,6 +51,14 @@ class PublicCatalogueConsistencyTests(unittest.TestCase):
                 self.assertEqual(int(m.group(1)), count)
         self.assertEqual(sum(expected.values()), len(self.entries))
 
+    def test_site_status_description_is_not_a_stale_snapshot(self):
+        self.assertIn("Current statuses appear in the table below", self.browser)
+        self.assertNotIn("38 candidates", self.browser)
+        for path in ("audits/README.md", "literature-audits/README.md"):
+            source = (ROOT / path).read_text(encoding="utf-8")
+            self.assertIn(f"{len(self.entries)} numbered entries", source)
+            self.assertNotIn("46 numbered entries", source)
+
     def test_p010_publication_status_is_consistent(self):
         dossier = (ROOT / "problems/graph-theory/P010-minimum-coprime-adjacencies.md"
                    ).read_text(encoding="utf-8")

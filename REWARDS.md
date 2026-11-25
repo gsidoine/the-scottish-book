@@ -28,6 +28,8 @@ The public catalogue states the status next to each assigned designation. Non-sy
 
 A proof, counterexample, and other mathematical work must be assessed and attributed independently of whether a prize exists. Awards do not constitute publication, refereeing, or historical novelty certification.
 
+Some internally resolved entries retain their original symbolic designations as historical records. In particular, P005, P010 and P033 are classified as proved internally even though their previously stated prize conditions remain visible. **A symbolic designation does not mean that its mathematical condition is still open, or that any material award has been made.** The problem's formulation status is authoritative.
+
 ## Historical Scottish Book vocabulary
 
 The original designations remain documented separately from the active catalogue.
