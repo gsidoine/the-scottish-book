@@ -106,6 +106,9 @@ jobs:
       - name: Test P034 four-offset structural criterion in finite ranges
         run: python experiments/P034_four_offset_biconnectivity.py
 
+      - name: Verify P034 critical-span 2-connectivity through span 50
+        run: python experiments/P034_critical_span_certificate.py
+
       - name: Verify P036 Pasch overlap rank conditions
         run: python experiments/P036_pasch_overlap_ranks.py
 
