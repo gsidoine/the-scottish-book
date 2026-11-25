@@ -43,7 +43,7 @@ Computational verification establishes only the stated finite cases. An internal
 
 ## Symbolic rewards
 
-The original Scottish Book included prizes associated with particular questions, including prizes depending on the kind of solution. This collection uses four [modern symbolic designations](REWARDS.md)—A Coffee, A Book, A Dinner, and A Research Prize—while preserving the historically documented prizes and previous assignments. They form no scale of difficulty or prestige. The catalogue distinguishes symbolic, pledged, funded, and awarded states; every current assignment is **symbolic**, and **no physical prize is presently offered**. A dash in the catalogue denotes no assigned reward.
+The original Scottish Book included prizes associated with particular questions, including prizes depending on the kind of solution. This collection uses four [modern symbolic designations](REWARDS.md)—A Coffee, A Book, A Dinner, and A Research Prize—while preserving the historically documented prizes and previous assignments. They form no scale of difficulty or prestige. The catalogue distinguishes symbolic, pledged, funded, and awarded states; every current assignment is **symbolic**, and **no physical prize is presently offered**. A dash in the catalogue denotes no assigned reward. Symbolic assignments may remain visible on resolved problems as historical records; they do not imply an outstanding mathematical question or a material award.
 
 ## Established results
 
