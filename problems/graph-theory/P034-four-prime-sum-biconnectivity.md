@@ -78,7 +78,9 @@ $$
 \gcd(d_2-d_1,d_3-d_1,d_4-d_1)=1.
 $$
 
-The four labels necessarily yield two negative and two nonnegative offsets. A proposed stronger *sufficient* condition is that these four offsets belong to $[-W,W]$ and $m\ge2W-1$. The sufficiency statement is **unproved**, but an [exact falsification test](../../experiments/P034_four_offset_biconnectivity.py) found no counterexample in 47,162 width-parameter patterns, with repeated interval lengths for widths at most 12.
+The four labels necessarily yield two negative and two nonnegative offsets. Put $Q=d_4-d_1$. The [extension proposition](../../theorems/P034-four-offset-graph-reduction.md#extension-stability) proves that, once $H_m(D)$ is 2-vertex-connected for any $m\ge Q-1$, it remains so for every larger $m$. Thus the statement for all $m\ge Q-1$ is equivalent to its critical case $m=Q-1$.
+
+**Bounded-span theorem (computer-assisted).** If $Q\le50$ and the three offset differences have gcd one, the graph is 2-vertex-connected for **every $m\ge Q-1$**. Its exact [finite certificate](../../experiments/P034_critical_span_certificate.py) verifies all $211{,}587$ qualifying quadruples at the critical size; the extension proposition then covers arbitrarily large $m$. The general critical-span assertion for $Q>50$ remains unproved. This strengthens the earlier finite test of 47,162 width-parameter patterns and does not resolve P034 for all odd $n$.
 
 If the proposed sufficient condition holds in general, the existing P033 prime-palette density theorem implies P034 for **every sufficiently large odd order**, not merely infinitely many odd orders. This is a conditional implication, not a resolution.
 
