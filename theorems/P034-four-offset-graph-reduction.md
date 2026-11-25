@@ -70,6 +70,36 @@ $$
 
 This equivalence requires no coprimality hypothesis. The bound $Q-1$ is sharp as a uniform lower threshold: for $D=\{-3,-2,0,2\}$ one has $Q=5$; $H_3(D)$ has a vertex $A_1$ of degree one, while $H_4(D)$ is 2-vertex-connected.
 
+## An unbounded-span family
+
+**Theorem (consecutive pairs).** For all integers $a\ge2$ and $e\ge0$, let
+
+$$
+D=\{-a,-a+1,e,e+1\}.
+$$
+
+Then $H_m(D)$ is 2-vertex-connected for every $m\ge a+e$.
+
+**Proof.** Put $m=a+e$, so that $Q=d_4-d_1=m+1$. For $0\le k<m$ define
+
+$$
+j(k)=
+\begin{cases}
+k+e+1,&0\le k\le a-2,\\
+k-a+1,&a-1\le k<m.
+\end{cases}
+$$
+
+The values $j(k)$ run exactly once through $0,\ldots,m-1$. In each case both $j(k)-k$ and $j(k)-(k+1)$ lie in $D$. Hence
+
+$$
+A_0,B_{j(0)},A_1,B_{j(1)},\ldots,A_{m-1},B_{j(m-1)},A_m
+$$
+
+is a Hamiltonian path in $H_m(D)$. Its first right vertex is $B_{e+1}$ and its last right vertex is $B_e$. The additional edge $A_0B_e$ closes the path with $A_m$ omitted into a spanning cycle on the other $2m$ vertices. The remaining vertex $A_m$ has distinct neighbors $B_e$ and $B_{e+1}$ on that cycle. The graph is therefore 2-vertex-connected. The extension proposition proves the claim for all larger $m$. $\square$
+
+This family has unbounded $Q=a+e+1$ and satisfies the gcd-one condition automatically. It does not impose any primality condition on the four translated edge sums.
+
 ## A bounded-span theorem
 
 **Theorem (computer-assisted).** Suppose
