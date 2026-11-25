@@ -100,6 +100,19 @@ is a Hamiltonian path in $H_m(D)$. Its first right vertex is $B_{e+1}$ and its l
 
 This family has unbounded $Q=a+e+1$ and satisfies the gcd-one condition automatically. It does not impose any primality condition on the four translated edge sums.
 
+## One consecutive pair
+
+The [one-consecutive-pair theorem](P034-one-consecutive-pair-and-prime-gaps.md)
+proves 2-vertex-connectivity for all $m\ge Q-1$ whenever either the two
+negative offsets or the two nonnegative offsets are consecutive,
+**without requiring the other pair to be consecutive**. Its proof gives
+a spanning ear decomposition. The family has unbounded span $Q$.
+
+This construction also provides a
+[non-computer-assisted infinite-family corollary](P034-one-consecutive-pair-and-prime-gaps.md#a-simpler-infinite-family-proof-for-prime-sum-graphs)
+for the original prime-sum graphs using the fixed twin primes $269,271$
+and the established prime-gap bound $246$.
+
 ## A bounded-span theorem
 
 **Theorem (computer-assisted).** Suppose
