@@ -12,7 +12,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Interior prime sums realized by a partial matching; completion is open in this study",
       "verification": "Exact small matching optimization",
-      "priority": "watch",
       "sources": [
         {
           "name": "Greenfield & Greenfield (1998)",
@@ -23,7 +22,6 @@
           "url": "https://oeis.org/A000341"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "coffee",
@@ -42,7 +40,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "One connected component through n=12 in exhaustive tests",
       "verification": "Enumerated 423,884 matchings at n=12 in initial exploration",
-      "priority": "retain",
       "sources": [
         {
           "name": "Dyer–Jerrum–Müller (2017)",
@@ -53,7 +50,6 @@
           "url": "https://doi.org/10.4230/LIPIcs.MFCS.2019.80"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "coffee",
@@ -72,7 +68,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Equivalent to a min-cut condition for an arithmetic bipartite factor",
       "verification": "Integral max flow tested to n=3,000 (finite only)",
-      "priority": "focus",
       "sources": [
         {
           "name": "Greenfield & Greenfield (1998)",
@@ -83,7 +78,6 @@
           "url": "https://doi.org/10.1007/s00373-020-02241-1"
         }
       ],
-      "portfolio_tier": "A",
       "rewards": [
         {
           "kind": "book",
@@ -102,7 +96,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Elementary connectivity theorem for N > 2(2k-1)^3",
       "verification": "Small disconnected/connected cases enumerated",
-      "priority": "retain",
       "sources": [
         {
           "name": "Sidon/Golomb ruler equivalence",
@@ -113,7 +106,6 @@
           "url": "https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "research-prize",
@@ -132,7 +124,6 @@
       "novelty": "elementary universal-hub switch theorem; historical priority unverified; 2007 square-count formula known",
       "result": "Complete elementary proof and Lean 4.35.0 kernel-checked theorem: every coprime permutation switch graph is connected and has diameter ≤3(n−1), for all n≥1; novelty unverified",
       "verification": "The complete P005.coprime_switch_diameter theorem, including parity decomposition and switch lifting, compiles without sorryAx and uses only propext, Classical.choice and Quot.sound; independent constructive enumeration n≤11 and parity BFS n≤22",
-      "priority": "historical priority audit, optimal diameter and mixing time; full Lean theorem is complete",
       "sources": [
         {
           "name": "Pomerance (2022)",
@@ -151,7 +142,6 @@
           "url": "https://oeis.org/A009679"
         }
       ],
-      "portfolio_tier": "A",
       "rewards": [
         {
           "kind": "research-prize",
@@ -170,7 +160,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Asymptotic lower constant at least 1/√2 and upper at most 1",
       "verification": "Small exact MILP optima through N=60",
-      "priority": "retain",
       "sources": [
         {
           "name": "Sidon set bounds",
@@ -181,7 +170,6 @@
           "url": "https://doi.org/10.1007/s10474-024-01499-8"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "dinner",
@@ -200,7 +188,6 @@
       "novelty": "known subproblem; extension unverified",
       "result": "Full graceful existence iff n≤5 is a published 2021 theorem; extremal extension unverified",
       "verification": "Exact finite MILP checks in selected sizes",
-      "priority": "review",
       "sources": [
         {
           "name": "Panma–Rochanakul (2021), Theorem 2.1",
@@ -211,7 +198,6 @@
           "url": "https://arxiv.org/abs/2511.11331"
         }
       ],
-      "portfolio_tier": "D",
       "rewards": [
         {
           "kind": "dinner",
@@ -230,7 +216,6 @@
       "novelty": "needs precise formulation",
       "result": "Internal threshold/Gumbel arguments require external proof and priority audit",
       "verification": "Finite degree-profile and center checks",
-      "priority": "review",
       "sources": [
         {
           "name": "Gupta–Lee–Li (2021)",
@@ -245,7 +230,6 @@
           "url": "https://doi.org/10.1002/rsa.70098"
         }
       ],
-      "portfolio_tier": "D",
       "rewards": [
         {
           "kind": "coffee",
@@ -264,7 +248,6 @@
       "novelty": "high overlap: Maillet-type prime differences and OEIS A202472; distinct pairing statement not shown equivalent",
       "result": "One-color iff 2n+1 prime; two-color certificate from short prime difference",
       "verification": "Sieve certificates through n=1,000,000 (finite only)",
-      "priority": "reframe: isolate a two-palette theorem independent of the classical prime-difference certificate",
       "sources": [
         {
           "name": "Greenfield–Greenfield (1998)",
@@ -275,7 +258,6 @@
           "url": "https://oeis.org/A202472"
         }
       ],
-      "portfolio_tier": "D",
       "rewards": [
         {
           "kind": "book",
@@ -294,7 +276,6 @@
       "novelty": "internal proof; priority unverified",
       "result": "Exact formula for every n≥4 kernel-checked in Lean 4; asymptotic deduced mathematically; manuscript submitted to Integers",
       "verification": "Constructive proof with prime-factor paths; explicit witnesses checked n≤10,000",
-      "priority": "external proof and novelty audit",
       "sources": [
         {
           "name": "Erdős–Freud–Hegyvári (1983)",
@@ -305,7 +286,6 @@
           "url": "https://oeis.org/A076220"
         }
       ],
-      "portfolio_tier": "R",
       "rewards": [
         {
           "kind": "coffee",
@@ -324,7 +304,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Random sum-graphs are known; matching and factor phase behavior not located; factor saturation not monotone",
       "verification": "Explicit three-by-three obstruction to monotonicity; no asymptotic claims",
-      "priority": "retain: quantify the arithmetic dependent-edge matching threshold; keep nonmonotone factor saturation secondary",
       "sources": [
         {
           "name": "Campos–Dahia–Marciano (2024), random Cayley sum graphs",
@@ -335,7 +314,6 @@
           "url": "https://doi.org/10.37236/9148"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "research-prize",
@@ -354,7 +332,6 @@
       "novelty": "model and switch chain have known predecessors; no arithmetic-specific fragmentation regime established",
       "result": "The conditional connectivity observable is defined, but no distinguished density window or arithmetic-specific obstruction has been established; frozen-edge obstructions are generic",
       "verification": "Frozen-edge obstruction identified; unique-matching and nonmonotonicity caveats",
-      "priority": "isolate a concrete p(n) regime and an arithmetic switching obstruction not inherited from general random matching spaces",
       "sources": [
         {
           "name": "Dyer–Jerrum–Müller (2017), matching switches",
@@ -365,7 +342,6 @@
           "url": "https://doi.org/10.1112/mtk.12159"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "book",
@@ -384,7 +360,6 @@
       "novelty": "random Sidon thresholds and exchange heuristics have predecessors; no fixed k(N),q(N) regime with a proved new phenomenon",
       "result": "Model and conditional component observable are defined; the k=2 case is Johnson-graph connectivity, and no asymptotic fragmentation regime has been established",
       "verification": "k=2 degenerate connectivity checked conceptually; no large-case claim",
-      "priority": "specify k(N), q(N) and a falsifiable separation from random Sidon existence; rule out generic reconfiguration obstructions",
       "sources": [
         {
           "name": "Luque–Torre–Lacasa (2013), random Sidon phase transitions",
@@ -399,7 +374,6 @@
           "url": "https://doi.org/10.1006/jnth.1998.2325"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "coffee",
@@ -418,7 +392,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Exact triangle expectation matches Erdős–Rényi; four-clique expectation has an additive-parallelogram correction",
       "verification": "Exact enumeration of K4 motif moments for odd cyclic orders 5, 7, 9",
-      "priority": "new structural candidate",
       "sources": [
         {
           "name": "Kahle (2009), topology of random clique complexes",
@@ -433,7 +406,6 @@
           "url": "https://doi.org/10.1112/jlms.12872"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "dinner",
@@ -452,7 +424,6 @@
       "novelty": "high overlap risk: colored triangulation flip graphs",
       "result": "Odd doubled area iff the triangle has three different mod-2 vertex classes; flips require all four classes",
       "verification": "Exhaustive parity color patterns through n=9 (zero disconnected four-class cases); six-vertex three-color obstruction",
-      "priority": "retain subject to full-text comparison with colored and colorful triangulation flip theorems; four-residue simultaneous constraint may be distinct",
       "sources": [
         {
           "name": "Baur et al., coloured triangulation flip graphs (2025)",
@@ -475,7 +446,6 @@
           "url": "https://doi.org/10.20382/jocg.v16i1a9"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "coffee",
@@ -494,7 +464,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Minimal nonfaces have size 3 or 4; exact F2 Betti numbers exhibit migration from lower to higher dimensions",
       "verification": "Exact augmented boundary-rank computations through N=23; no asymptotic vanishing claim",
-      "priority": "structural discovery",
       "sources": [
         {
           "name": "Superdock (2023), Sidon sets and simplicial configurations",
@@ -509,7 +478,6 @@
           "url": "https://doi.org/10.5070/C62156880"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "dinner",
@@ -528,7 +496,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "For fixed 0<p<1, the normalized height is asymptotically between p and 1 in probability; convergence to a constant is unproved",
       "verification": "Exact dynamic program cross-checked against all subsets for N≤9; exploratory sampling at larger N",
-      "priority": "structural discovery",
       "sources": [
         {
           "name": "Kohayakawa–Kreuter–Osthus (2000), random Boolean lattice chains",
@@ -539,7 +506,6 @@
           "url": "https://www.sciencedirect.com/science/article/pii/S0097316520301837"
         }
       ],
-      "portfolio_tier": "A",
       "rewards": [
         {
           "kind": "coffee",
@@ -558,7 +524,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Single-element moves cannot preserve XOR; two-exchange fibers are connected for all W at d=4 but can be disconnected at d=5",
       "verification": "All 32,768 available sets at d=4 checked, plus explicit ten-vector d=5 counterexample with components 4 and 2",
-      "priority": "structural discovery",
       "sources": [
         {
           "name": "Hörsch–Imolay–Mizutani–Oki–Schwarcz (2024), group-labeled matroid bases",
@@ -573,7 +538,6 @@
           "url": "https://doi.org/10.1016/j.jctb.2025.10.009"
         }
       ],
-      "portfolio_tier": "A",
       "rewards": [
         {
           "kind": "research-prize",
@@ -592,7 +556,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "When the maximum size is 2n, single-point exchanges are impossible and two-point exchanges are rectangle switches",
       "verification": "Exact optimal configuration exchange graphs through n=7; minimal connecting move sizes 2,4,3,5,6 for n=3,...,7",
-      "priority": "exploratory — exchange rigidity and finite optimal configurations",
       "sources": [
         {
           "name": "Guy–Kelly (1968), no-three-in-line problem",
@@ -607,7 +570,6 @@
           "url": "https://wwwhomes.uni-bielefeld.de/achim/no3in/readme.html"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "book",
@@ -626,7 +588,6 @@
       "novelty": "not certified; targeted literature comparison only",
       "result": "Classical Hankel corank and exact cyclic/two-generator/elementary-abelian laws; uniform positive TV separation from ordinary Cohen–Lenstra law; full limit unresolved",
       "verification": "Exact modular group counts at p=2 (n≤4), p=3 (n≤3); kernel-product rank proved from Yiasemides (2024)",
-      "priority": "theorem-building — higher-exponent three-generator group laws",
       "sources": [
         {
           "name": "Dwivedi–Grinberg (2022), finite-field Hankel ranks",
@@ -645,7 +606,6 @@
           "url": "https://doi.org/10.1007/s40687-023-00418-7"
         }
       ],
-      "portfolio_tier": "A",
       "rewards": [
         {
           "kind": "research-prize",
@@ -669,7 +629,6 @@
       "novelty": "not certified (targeted audit)",
       "result": "Precisely defined correlated graph-Laplacian cokernel; no limiting group law yet proved",
       "verification": "Model and connectivity-conditioning requirements specified; exact Smith-form experiments pending",
-      "priority": "new candidate; conditional",
       "sources": [
         {
           "name": "Wood (2017), sandpile groups of random graphs",
@@ -680,7 +639,6 @@
           "url": "https://doi.org/10.1080/00927872.2024.2347582"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "dinner",
@@ -699,7 +657,6 @@
       "novelty": "only a one-square finite example established; no focused homological degree, critical exponent or verified new asymptotic phenomenon",
       "result": "The N=1 full-retention complex is a tetrahedral boundary; no nontrivial homology scale, concentration theorem or limiting law has been established",
       "verification": "Exact elementary N=1 example only; finite Betti experiments pending",
-      "priority": "specify a single testable H_2 or H_1 critical-scale conjecture and establish structural witness counts before promotion",
       "sources": [
         {
           "name": "Unimodular triangulations (2021)",
@@ -710,7 +667,6 @@
           "url": "https://doi.org/10.1007/s00454-017-9938-z"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": []
     },
     {
@@ -723,7 +679,6 @@
       "novelty": "not certified (targeted audit)",
       "result": "Full rank iff no nonzero prime-parity functional annihilates all retained columns; exact zero-row probability",
       "verification": "Deterministic parity characterization proved; probabilistic threshold unproved",
-      "priority": "prove the probabilistic rank threshold beyond the tautological left-kernel characterization, including nonzero parity obstructions after row coverage",
       "sources": [
         {
           "name": "Linial–Rothschild (1981), subset incidence rank",
@@ -734,7 +689,6 @@
           "url": "https://doi.org/10.1137/16M1098140"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "coffee",
@@ -753,7 +707,6 @@
       "novelty": "not certified (targeted audit)",
       "result": "The primes above N/2 are twin leaves, yielding Z(D_N) >= pi(N)-pi(N/2)-1",
       "verification": "Elementary rigorous lower bound; exact finite zero-forcing computations pending",
-      "priority": "new candidate; conditional",
       "sources": [
         {
           "name": "MathWorld, Zero Forcing Number",
@@ -764,7 +717,6 @@
           "url": "https://www.sciencedirect.com/science/article/pii/S0097316520301837"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "dinner",
@@ -783,7 +735,6 @@
       "novelty": "confirmed collision for linear-path analogue",
       "result": "Erdős–Freud–Hegyvári (1983) already prove the linear-path asymptotic; cyclic-only variation remains under review",
       "verification": "Elementary lower bound recovered; no independent cyclic upper bound",
-      "priority": "high-overlap watch; not flagship",
       "sources": [
         {
           "name": "Erdős–Freud–Hegyvári (1983), Theorem 1",
@@ -798,7 +749,6 @@
           "url": "https://doi.org/10.1112/mtk.12177"
         }
       ],
-      "portfolio_tier": "D",
       "rewards": [
         {
           "kind": "book",
@@ -817,7 +767,6 @@
       "novelty": "not certified (specialist source check needed)",
       "result": "Exact finite-field elimination gives vanishing square-filled first homology for n up to 60; no proof for all n",
       "verification": "Exhaustive enumeration of all four-cycles and their GF(2) boundary span; reproducible standard-library code",
-      "priority": "new candidate; arithmetic topology / toric overlap risk",
       "sources": [
         {
           "name": "Prime Sum Graphs and the Induced Trees They Contain (2025)",
@@ -828,7 +777,6 @@
           "url": "https://doi.org/10.1006/jabr.1999.7918"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "coffee",
@@ -847,7 +795,6 @@
       "novelty": "not certified; closely related to counting primitive sets and distributive-lattice walks",
       "result": "The unnormalized heat-bath spectral gaps converge: lim_N lambda_N = inf_C lambda_C, with 0 ≤ limit ≤ 66083/243852; exact exchange geometry, finite factors, and the (121926/66083)n log n lower mixing bound are proved",
       "verification": "Self-contained factor-inheritance proof of the spectral limit; exact 23-state rational Rayleigh certificate and independent finite-pattern counts",
-      "priority": "determine whether the spectral limit is positive and prove full-chain mixing-time order and possible cutoff",
       "sources": [
         {
           "name": "Liu–Pach–Palincza (2021), maximum primitive sets",
@@ -866,7 +813,6 @@
           "url": "https://doi.org/10.1016/j.ejc.2020.103237"
         }
       ],
-      "portfolio_tier": "A",
       "rewards": [
         {
           "kind": "research-prize",
@@ -885,7 +831,6 @@
       "novelty": "not certified; arithmetic Dirichlet convolution and order-complex Möbius theory are classical",
       "result": "Internally derived exact Euler-characteristic expectation with Dirichlet series p(zeta−1)/(1+p(zeta−1)); p=1 recovers the Mertens function",
       "verification": "Exact enumerative small-N checks and independent coefficient recurrence",
-      "priority": "promising; analytic number theory and random topology",
       "sources": [
         {
           "name": "DLMF, Dirichlet convolution",
@@ -900,7 +845,6 @@
           "url": "https://doi.org/10.1007/s11139-018-0093-9"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "dinner",
@@ -919,7 +863,6 @@
       "novelty": "known exact anti-diagonal X-ray invariant; novelty of prime-restricted bounded Markov moves unverified",
       "result": "No two-position swap can preserve a nontrivial exact sum multiset; an explicit prime-supported fiber with two members differs at four positions",
       "verification": "Exhaustive prime-sum matching fiber enumeration for n≤13; dependency-free script",
-      "priority": "reframe: compare applicable toric Markov bases to the restricted prime-supported fibers",
       "sources": [
         {
           "name": "Bebeacua–Mansour–Postnikov–Severini (2005), X-rays",
@@ -930,7 +873,6 @@
           "url": "https://doi.org/10.1016/S0304-3975(02)00015-4"
         }
       ],
-      "portfolio_tier": "D",
       "rewards": [
         {
           "kind": "book",
@@ -949,7 +891,6 @@
       "novelty": "internal disproof; historical priority unverified",
       "result": "Proved ν(D_n) ≤ floor(n/3)+π(2n−3)−2; Hall counterexample n=51,872",
       "verification": "Exact sieve Hall certificate n=51,872; independent prime-count bound n=240,158",
-      "priority": "resolved: retain congruence matching bound and historical-priority caveat",
       "sources": [
         {
           "name": "OEIS A227050, prime-sum-and-difference circular arrangements",
@@ -960,7 +901,6 @@
           "url": "https://doi.org/10.1007/s00373-025-02999-2"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": []
     },
     {
@@ -973,8 +913,6 @@
       "novelty": "not certified; Sidon sets of primes and additive-multiplicative restrictions require a specialist search",
       "result": "Classical Sidon bound gives upper (1+o(1))sqrt(N); Sidon-subsets-of-primes results give a lower bound of order sqrt(N/log N)",
       "verification": "Exact strong-Sidon and pairwise gcd enumeration for N≤30",
-      "priority": "promising; seek the sharp constant or a fixed multiplicative density loss",
-      "portfolio_tier": "B",
       "sources": [
         {
           "name": "Bailleul–Riblet, Sidon subsets of arbitrary integer sets (2026)",
@@ -1007,8 +945,6 @@
       "novelty": "strong overlap: bounded prime differences and Erdős Problem 17; exact quantifiers not equivalent",
       "result": "Only prime-sum-two edge is a bridge; diameter seven is equivalent to uniformly finding prime pairs with prescribed even differences in bounded intervals",
       "verification": "Exact bridge-based diameters for 2≤n≤250; independent all-pairs BFS for n≤35",
-      "priority": "reframe: establish a distinct theorem beyond bounded prime-difference coverage",
-      "portfolio_tier": "D",
       "sources": [
         {
           "name": "Erdős problem 17, prime difference coverage",
@@ -1037,8 +973,6 @@
       "novelty": "historical priority unverified; universal all-n three-prime connectivity proved by an effective prime-progression sieve and an exact finite certificate; earlier Hamiltonian prime-set results are related but distinct",
       "result": "Unconditional all-order theorem κ(n)≤3 (n≥3): explicit analytic bound n≥10^10 via Bennett–Martin–O’Bryant–Rechnitzer and Brun–Titchmarsh; exact small-n check n≤120 and 103 verified prime-triple interval certificates cover 121≤n≤10,034,390,380; κ(n)=2 exactly at the nearby twin-prime cases",
       "verification": "Standard-library integer certificate: exhaustive 3≤n≤120, 103 contiguous prime-triple intervals through 10,034,390,380 with trial-division primality, and exact rational 0.8+0.12+0.02<1 analytic obstruction checks; all-n proof is partly computer-assisted, with novelty unverified",
-      "priority": "independent mathematical review of effective sieve constants, reflection lemma, and primality certificate; exhaustive priority comparison; short manuscript; Lean formalization is optional",
-      "portfolio_tier": "A",
       "sources": [
         {
           "name": "Chen–Fu–Guo, Hamiltonicity in Prime Sum Graphs",
@@ -1091,7 +1025,6 @@
       "novelty": "unverified; prime-sum connectivity predecessor",
       "result": "Four labels are necessary at odd order and suffice infinitely often; the four-offset graph has an unbounded-span consecutive-pair construction and a computer-assisted theorem for every span at most 50",
       "verification": "Exact checks: 6,171 modular-prime cases, 1,498 odd orders through 3001, 211,587 critical-span graphs, and 4,830 consecutive-pair examples; general-span 2-connectivity remains open",
-      "priority": "explore",
       "sources": [
         {
           "name": "Chen–Fu–Guo (2021), Hamiltonicity in Prime Sum Graphs",
@@ -1114,7 +1047,6 @@
           "url": "https://combinatorialpress.com/um/vol110/"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "coffee",
@@ -1133,7 +1065,6 @@
       "novelty": "high overlap risk: Sidon–Ramsey coloring and primitive sets",
       "result": "(1-o(1))sqrt(N) <= chi_PS(N) <= (1+sqrt(2)+o(1))sqrt(N), using dyadic bands",
       "verification": "Elementary proof from classical Sidon coloring; no finite exhaustive claim",
-      "priority": "explore",
       "sources": [
         {
           "name": "Sidon coloring of intervals",
@@ -1148,7 +1079,6 @@
           "url": "https://www.erdosproblems.com/tags/sidon%20sets"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "research-prize",
@@ -1167,7 +1097,6 @@
       "novelty": "unverified; Schur Ramsey thresholds are close but the peeling observable is different",
       "result": "A six-vertex four-edge 2-core has three free parameters and expected count of order N^3 p^6",
       "verification": "Explicit four-edge incidence witness and exact small-N enumerations",
-      "priority": "exploratory; classify arithmetic 2-core witnesses",
       "sources": [
         {
           "name": "Graham–Rödl–Ruciński Schur threshold (1996)",
@@ -1182,7 +1111,6 @@
           "url": "https://doi.org/10.37236/10794"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "dinner",
@@ -1201,7 +1129,6 @@
       "novelty": "leading induced-cycle asymptotic and unbounded deficit already proved; residual maximal-deficit question presently transfers classical prime-gap fluctuations",
       "result": "Proved H(N)~2π(sqrt(N)) and exact saturation criterion; D(N) unbounded by Pintz (2015); quantitative maximal order unresolved",
       "verification": "Constructive prime-product cycles and finite saturation certificates",
-      "priority": "show a two-sided prime-gap-to-cycle deficit theorem or an independent graph obstruction before treating the remainder as a separate open problem",
       "sources": [
         {
           "name": "Mahadev–Peled longest cycles in threshold graphs (1994)",
@@ -1220,7 +1147,6 @@
           "url": "https://doi.org/10.1007/978-3-319-22240-0_17"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "coffee",
@@ -1239,7 +1165,6 @@
       "novelty": "unverified; classical Bollobás set-pair extremality is the main predecessor",
       "result": "Internally proved log M(N)=T(N) log 2 + O(sqrt(T(N) log T(N))), where T is the inverse N² primorial cutoff",
       "verification": "Explicit complementary-prime induced matching construction checked for finite prime blocks",
-      "priority": "refine subexponential gap and characterize near-extremizers",
       "sources": [
         {
           "name": "Füredi, Gyárfás and Király (2023), set pairs",
@@ -1250,7 +1175,6 @@
           "url": "https://doi.org/10.1016/j.ejc.2024.103983"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "coffee",
@@ -1269,7 +1193,6 @@
       "novelty": "high overlap: closely related 2020 MathOverflow bilinear prime pairing with two intervals and either sign",
       "result": "Perfect matching verified for even N≤200 and N=250,300,400; general Hall condition unproved",
       "verification": "Exact sieve-backed bipartite matching certificates",
-      "priority": "explore; seek arithmetic Hall expansion or a counterexample",
       "sources": [
         {
           "name": "Recamán Santos (2020), product adjacent to prime pairing",
@@ -1280,7 +1203,6 @@
           "url": "https://cs.uwaterloo.ca/journals/JIS/green.html"
         }
       ],
-      "portfolio_tier": "C",
       "rewards": [
         {
           "kind": "book",
@@ -1299,7 +1221,6 @@
       "novelty": "unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown",
       "result": "Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 5/12; exact fractional-sieve optimum 5/12 for the first five odd primes {3,5,7,11,13}, including asymmetric profiles, by integer Hall-support certificate; full sieve infimum open",
       "verification": "Five-prime theorem: 7,581 upward-closed supports and 15,586 admissible ordered support pairs certified with integer arithmetic; existing four-prime exact certificate and Hall bounds",
-      "priority": "extend the sharpness classification beyond five odd primes and determine whether the finite-prime sieve limit controls the arithmetic matching resilience",
       "sources": [
         {
           "name": "Pomerance (2021), Coprime Matchings",
@@ -1322,7 +1243,6 @@
           "url": "https://arxiv.org/abs/2607.26871"
         }
       ],
-      "portfolio_tier": "A",
       "rewards": [
         {
           "kind": "research-prize",
@@ -1341,7 +1261,6 @@
       "novelty": "unverified; related arithmetic-subsequence and hypercube accessibility results are established",
       "result": "Internally proved D_N and S_N have common leading scale log N/log log N; their difference is between (1-o(1)) and (2+o(1)) times log N log log log N/(log log N)^2 with high probability",
       "verification": "Exact finite dynamic-programming checks and seeded samples; asymptotic bounds proved using divisor-chain counting, prime asymptotics, and the Hegarty–Martinsson accessible-cube theorem",
-      "priority": "structural random-order comparison; determine second-order limit or fluctuations",
       "sources": [
         {
           "name": "Hegarty and Martinsson (2014), accessible paths",
@@ -1356,7 +1275,6 @@
           "url": "https://doi.org/10.1016/j.jcta.2020.105391"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "book",
@@ -1375,7 +1293,6 @@
       "novelty": "unverified; Kummer's theorem and digital carry combinatorics are classical, precise Hamiltonian question requires specialist review",
       "result": "Internally proved connectivity for all m>=4, precisely two forced leaves, and |E|=((m+2)3^(m-2)-m)/2; Hamiltonicity remains open",
       "verification": "Complete edge and connectivity checks for m=2..8; explicit Hamiltonian paths for m=4..8 checked against carries and binomial valuations",
-      "priority": "test Hamiltonian-path existence with its two forced endpoints and identify an inductive structure",
       "sources": [
         {
           "name": "Granville (1997), arithmetic of binomial coefficients and Kummer's theorem",
@@ -1386,7 +1303,6 @@
           "url": "https://www.cecm.sfu.ca/organics/papers/granville/paper/binomial/html/node3-an.shtml"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "dinner",
@@ -1405,7 +1321,6 @@
       "novelty": "unverified; Farey graphs and prime-denominator fractions have established prior art",
       "result": "Exact distance-two identity d₂(q)=2[ω(q²−4)−1_{q−2 prime}−1_{q+2 prime}]; D₂(N)~4N loglogN/logN and second moment O(N loglogN/logN), hence d₂(q)~4loglogq for almost all prime q; full C(N) asymptotic open",
       "verification": "Independent Farey determinant construction and shifted-prime-factor counts agree by denominator for N=5,11,29,101,500,2000,5000; existing forest and component identities",
-      "priority": "determine the full component growth beyond the exact two-step layer; audit prior literature on prime-denominator Farey graph neighborhoods and shifted-prime additive structure",
       "sources": [
         {
           "name": "D. E. Welch (2008), Farey fractions with prime denominators",
@@ -1420,7 +1335,6 @@
           "url": "https://ems.press/content/book-chapter-files/33121"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "coffee",
@@ -1439,7 +1353,6 @@
       "novelty": "unverified; related squarefree-sum permanents and classical permanent bounds are known",
       "result": "Internally proved log M(N)=log(N!)+N log(6/pi^2)+O(sqrt N)",
       "verification": "Exact integer permanents via subset dynamic programming through N=17",
-      "priority": "isolate arithmetic contribution to the subexponential permanent factor",
       "sources": [
         {
           "name": "OEIS A398305, squarefree-sum permutation permanent",
@@ -1450,7 +1363,6 @@
           "url": "https://web.math.princeton.edu/~nalon/PDFS/hypcube11.pdf"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "research-prize",
@@ -1469,7 +1381,6 @@
       "novelty": "unverified; additive and multiplicative complete mappings have extensive literature",
       "result": "Internally proved that at least two multiplicative image defects are unavoidable for p>=5; the bound is attained at p=5,7,11,13",
       "verification": "Explicit complete-mapping permutation witnesses and independent exact checks",
-      "priority": "construct or disprove near-injective product images for every prime p>=5",
       "sources": [
         {
           "name": "Bors and Wang (2023), compositions of complete mappings",
@@ -1480,7 +1391,6 @@
           "url": "https://doi.org/10.5644/SJM.16.01.10"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "coffee",
@@ -1499,7 +1409,6 @@
       "novelty": "unverified; binary Sidon sets and APN functions are classical, prime-restricted extremal size needs comparison",
       "result": "Internally proved 2^(m/2)/m << s_m <= 2^(m/2)+O(1) for primes in [2^m,2^(m+1))",
       "verification": "Finite XOR Sidon/APN constructions and exhaustive translate-intersection checks for small m",
-      "priority": "remove the logarithmic loss in prime-restricted binary Sidon construction",
       "sources": [
         {
           "name": "Czerwinski and Pott (2026), On large Sidon sets",
@@ -1510,7 +1419,6 @@
           "url": "https://doi.org/10.1016/j.jcta.2024.106001"
         }
       ],
-      "portfolio_tier": "B",
       "rewards": [
         {
           "kind": "book",
@@ -1534,7 +1442,6 @@
       "novelty": "unverified; close to Mycielski perfect-set fusion and quantitative pattern avoidance in local fields",
       "result": "Explicit 1/2-Ahlfors-regular simultaneous Sidon set (Fraser's 1/2 existence bound is known); sharp 1/2 dimension bound for locally Lipschitz pair-sum-to-product maps; proper closed subfields have dimension at most 1/2",
       "verification": "Exact symbolic argument and finite polynomial checks of up to 64 elements; dimension-one existence is not established",
-      "priority": "watch; investigate full-dimensional simultaneous algebraic independence",
       "sources": [
         {
           "name": "Mycielski (1964), Independent sets in topological algebras",
@@ -1571,7 +1478,6 @@
       "novelty": "resolved by the classical Bertrand prime-reflection construction; not an open problem",
       "result": "For every n, a permutation with prime pair sums exists by recursive reflection; primality automatically implies coprimality and squarefree sums",
       "verification": "Complete elementary proof; the prime-sum reflection construction is classical (Greenfield–Greenfield 1998)",
-      "priority": "archival known result; no unresolved prize attached to the original question",
       "sources": [
         {
           "name": "L. E. and S. J. Greenfield (1998), Some Problems of Combinatorial Number Theory Related to Bertrand's Postulate",
@@ -1602,7 +1508,6 @@
       "novelty": "unverified; full-matrix rank classical, random principal-submatrix limit needs a targeted specialist comparison",
       "result": "Known exact full rank equals the squarefree count; bounded-differences concentration and an expected-rank radical-occupancy upper bound are proved",
       "verification": "Exact binary Gaussian elimination for finite Bernoulli subsets with fixed seeds; simulations do not prove convergence",
-      "priority": "determine existence and possible form of the normalized mean-rank limit",
       "sources": [
         {
           "name": "OEIS A013928, full coprimality-matrix rank",
@@ -1635,7 +1540,6 @@
       "novelty": "high overlap risk: hypercube distance colorings; first-order asymptotics already follow from established coding theory",
       "result": "Proved 2n-3<=chi(H_n)<=2^(1+ceil(log2 n)) for n>=5, with chi(H_4)=8 and chi(H_8)=16; the first-order asymptotic is known",
       "verification": "Algebraic coloring and clique construction, independent-set/sphere-packing proof at n=8; finite verifier supplied",
-      "priority": "resolve the additive-constant gap for dyadic dimensions; search exact hypercube coloring literature",
       "sources": [
         {
           "name": "Östergård (2004), On a hypercube coloring problem",
